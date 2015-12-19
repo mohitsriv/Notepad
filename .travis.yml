@@ -18,5 +18,6 @@ env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
 
-deploy:  
-  provider: azure_web_apps
+#deploy:  
+#  provider: azure_web_apps
+#
