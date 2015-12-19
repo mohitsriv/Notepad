@@ -160,14 +160,15 @@ main, .notepad-share-icons, .notepad-disqus {
 .notepad-site-head .notepad-site-head-content {
   width: 100%;
   text-align: center;
-  background-color: black;
+  background-color: #455a63;
   background-size: cover; }
   .notepad-site-head .notepad-site-head-content.with-bg-cover {
     background-color: rgba(0, 0, 0, 0.7); }
   .notepad-site-head .notepad-site-head-content .notepad-site-head-title-bg {
     display: inline-block;
     padding: 0.625rem;
-    background: #e51843;
+    background: #e7c9a4;
+    color: #455a63;
     line-height: 1.1; }
   .notepad-site-head .notepad-site-head-content h1, .notepad-site-head .notepad-site-head-content h2 {
     margin: 0;
@@ -236,7 +237,7 @@ main, .notepad-share-icons, .notepad-disqus {
       display: block;
       font-size: 3.25rem;
       font-weight: 800;
-      color: #e51843;
+      color: #e7c9a4;
       font-family: "Montserrat", sans-serif; }
     .notepad-content .notepad-index-post .notepad-post-meta .month-year {
       display: block;
@@ -352,7 +353,7 @@ nav.pagination {
     margin-left: 0.625rem; }
 
 .notepad-site-footer {
-  background: black; }
+  background: #455a63; }
   .notepad-site-footer.with-bg-cover {
     background-color: rgba(0, 0, 0, 0.7); }
   .notepad-site-footer .social-icons,
