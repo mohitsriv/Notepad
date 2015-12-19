@@ -1,6 +1,25 @@
 #!/usr/bin/env bash
 set -e # halt script on error
+
+# build site with jekyll, by default to _site folder
 bundle exec jekyll build
+
+# cleanup
+rm -rf ../Blog.generated
+
+#clone generated branch using encrypted GH_TOKEN
+git clone -b generated https://${GH_TOKEN}@github.com/mohitsriv/Blog.git ../Blog.generated
+
+# copy generated HTML site to 'generated' branch
+cp -R _site/* ../Blog.generated
+
+# commit
+cd ../Blog.generated
+git config user.email "mohitsriv@hotmail.com"
+git config user.name "Mohit Srivastava"
+git add -A .
+git commit -a -m "Travis #$TRAVIS_BUILD_NUMBER"
+git push --quiet origin generated > /dev/null 2>&1
 
 #set +e do not halt script on error
 #bundle exec htmlproof ./_site
