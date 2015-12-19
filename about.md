@@ -1,13 +1,13 @@
 ---
 layout: page
 permalink: /about/index.html
-title: Mohit Srivastava
+title: About Me
 tags: [Mohit, Srivastava]
 imagefeature: fourseasons.jpg
 chart: true
 ---
 <figure>
-  <img src="{{ site.url }}/images/mohit-srivastava.jpg" alt="Mohit Srivastava">
+  <img src="{{ site.url }}/images/mohitsriv.jpg" alt="Mohit Srivastava">
   <figcaption>Mohit Srivastava</figcaption>
 </figure>
 

@@ -56,10 +56,10 @@ var notepad = (function ($) {
 
     // notepad javascripts initialization
     init = function () {
-        indexPostAnimate();
-        $(window).on('scroll', function() {
-            indexPostAnimate();
-        });
+        // indexPostAnimate();
+        // $(window).on('scroll', function() {
+        //     indexPostAnimate();
+        // });
         postHeaderCoverImg();
         mobileMenu();
         headerTitlesBackgroundCheck();

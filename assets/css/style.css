@@ -214,7 +214,7 @@ main, .notepad-share-icons, .notepad-disqus {
       padding-bottom: 12.5rem; } }
 
 .notepad-content .notepad-index-post {
-  visibility: hidden;
+  /*visibility: hidden;*/
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   border-bottom: 0.0625rem solid #d9d9d9; }

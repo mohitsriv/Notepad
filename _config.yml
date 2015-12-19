@@ -3,11 +3,11 @@ description:      "Cloud Mouth"
 logo:             logo.png
 disqus_shortname: cloudmouth
 share:            true
-dropcap:			true
+dropcap:          true
 # Change url to your domain. Leave localhost server or blank when working locally.
 # or use the hint from http://jekyllrb.com/docs/github-pages/ to keep this the same 
 # whether working locally or remotely. Start Jekyll with: jekyll serve --baseurl ''
-url:        	  ""
+url:              ""
 
 # Owner/author information
 owner:
@@ -25,7 +25,7 @@ owner:
   google_plus:    
 
 # Analytics and webmaster tools stuff goes here
-google_analytics:   UA-39365944-7
+google_analytics:  #UA-39365944-7
 google_verify:      
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:         
@@ -45,7 +45,7 @@ links:
     url: /about
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    Asia/Dhaka
+timezone:    America/Los_Angeles
 future:      true
 highlighter: pygments
 markdown:    kramdown
@@ -69,6 +69,7 @@ kramdown:
     coderay_bold_every: 10
     coderay_css: class
 
+# This is to scaffold. Look at the README.md for more.
 prose:
   rooturl: '_posts'
   siteurl: 'http://hmfaysal.github.io/Notepad/'
