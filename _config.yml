@@ -1,7 +1,7 @@
 title:            Mohit Srivastava
 description:      "Cloud Mouth"
 logo:             logo.png
-disqus_shortname: hmfaysal
+disqus_shortname: mohit_srivastava
 share:            true
 dropcap:			true
 # Change url to your domain. Leave localhost server or blank when working locally.
@@ -12,10 +12,10 @@ url:        	  ""
 # Owner/author information
 owner:
   name:           Mohit Srivastava
-  avatar:         hmfaysal.jpg
+  avatar:         mohitsriv.jpg
   email:          
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
-  description:    Awesome Dude, Awesome Life
+  description:    Thoughts on the cloud, software, product management, and entrepreneurship
   # Social networking links used in footer. Update and remove as you like.
   twitter:        mohit
   facebook:       
