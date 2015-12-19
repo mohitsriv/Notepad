@@ -20,7 +20,7 @@ git config user.email "mohitsriv@hotmail.com"
 git config user.name "Mohit Srivastava"
 git add -A .
 git commit -a -m "Travis #$TRAVIS_BUILD_NUMBER"
-git push --quiet origin generated > /dev/null 2>&1
+git push --quiet origin master > /dev/null 2>&1
 
 #set +e do not halt script on error
 #bundle exec htmlproof ./_site
