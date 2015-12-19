@@ -8,7 +8,8 @@ bundle exec jekyll build
 rm -rf ../Blog.generated
 
 #clone generated branch using encrypted GH_TOKEN
-git clone -b generated https://${GH_TOKEN}@github.com/mohitsriv/Blog.git ../Blog.generated
+# git clone -b generated https://${GH_TOKEN}@github.com/mohitsriv/Blog.git ../Blog.generated
+git clone https://$AZURE_WA_USERNAME:$AZURE_WA_PASSWORD@cloudmouth.scm.azurewebsites.net:443/cloudmouth.git ../Blog.generated
 
 # copy generated HTML site to 'generated' branch
 cp -R _site/* ../Blog.generated
