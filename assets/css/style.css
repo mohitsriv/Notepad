@@ -278,7 +278,7 @@ main,
     border-bottom: 0.0625rem solid #d9d9d9;
 }
 .notepad-content .notepad-index-post:first-of-type {
-    padding-top: 5rem;
+    /*padding-top: 5rem;*/
 }
 .notepad-content .notepad-index-post .datetime {
     margin-bottom: 2.5rem;
@@ -289,7 +289,7 @@ main,
         padding-bottom: 4.375rem;
     }
     .notepad-content .notepad-index-post:first-of-type {
-        padding-top: 7.5rem;
+        /*padding-top: 7.5rem;*/
     }
     .notepad-content .notepad-index-post .datetime {
         margin-bottom: 0;
@@ -524,11 +524,11 @@ nav.pagination .older-posts .fa {
     }
 }
 .tag-template .notepad-index-post:first-of-type {
-    padding-top: 3.125rem;
+    /*padding-top: 3.125rem;*/
 }
 @media only screen and (min-width: 40.063em) {
     .tag-template .notepad-index-post:first-of-type {
-        padding-top: 4.6875rem;
+        /*padding-top: 4.6875rem;*/
     }
 }
 .notepad-tags-container {
