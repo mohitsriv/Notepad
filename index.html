@@ -29,7 +29,11 @@ tags: [Mohit, Srivastava, Seattle, Microsoft, cloud, product management]
                 </h3>
             </header>
             <section class="notepad-post-excerpt">
-                <p>{{ post.content | strip_html | truncatewords:40 }}</p>
+                {% if post.excerpt_image %} 
+                <img src="{{ site.baseurl }}/images/{{ post.excerpt_image }}"></img>
+                {% endif %}
+                <!--<p>{{ post.content | strip_html | truncatewords:40 }}</p>-->
+                <p>{{ post.excerpt }}</p><p><a href="{{ site.baseurl }}{{ post.url }}">Read more...</a></p>
             </section>
             
                 <div class="notepad-index-post-tags">

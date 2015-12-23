@@ -8,8 +8,12 @@ tags: []
 imagefeature:
 comments: true
 share: true
+excerpt_separator: <!--more-->
+excerpt_image: favescom-success-logo.png
 ---
 I recently gave at talk at StartPad.org chronicling some of our successes and lessons learned — dare I call them mistakes:) — from my time as co-founder and CTO at Faves.com.  
+
+<!--more-->
 
 ![Faves.com logo]({{ site.baseurl }}/images/favescom-success-logo.png)
 
