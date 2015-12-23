@@ -27,6 +27,9 @@ tags: [Mohit, Srivastava, Seattle, Microsoft, cloud, product management]
                         {{ post.title }}
                     </a>
                 </h3>
+                <h4 class="notepad-post-small" style="text-align:center">
+                    {{ post.date | date: "%d %b %Y" }}
+                </h4>
             </header>
             <section class="notepad-post-excerpt">
                 {% if post.excerpt_image %} 

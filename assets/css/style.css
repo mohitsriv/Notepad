@@ -299,6 +299,16 @@ main,
     display: block;
     text-align: center;
 }
+@media only screen and (max-width: 40em) {
+    .notepad-content .notepad-index-post .notepad-post-meta {
+        display: none;
+    }
+}
+@media only screen and (min-width: 40.063em) {
+    h4.notepad-post-small {
+        display:none;
+    }
+}
 .notepad-content .notepad-index-post .notepad-post-meta .day {
     display: block;
     font-size: 3.25rem;
