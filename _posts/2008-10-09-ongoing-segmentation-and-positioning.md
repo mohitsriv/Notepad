@@ -1,26 +1,31 @@
 ---
 layout: post
 title: Ongoing Segmentation and Positioning
-description: "Just about everything you'll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
+description: "Learnings from LinkedIn"
 modified: 2008-10-09
 category: entrepreneurship
 tags: []
 imagefeature:
 comments: true
 share: true
+excerpt_image: ongoing-segmentation-linkedin.png
 ---
-I recently attended a talk by [Craig Sherman](https://www.wsgr.com/WSGR/DBIndex.aspx?SectionName=attorneys/BIOS/6863.htm) of Wilson Sonsini Goodrich & Rosati about Corporate Structure and Common Problems.  The event was organized by StartPad, an excellent Seattle-based entrepreneurial organization through which we rent our office space and hence get the opportunity to intermingle with and work alongside other startups.
+I am part of a group of technology entrepreneurs and managers where we periodically discuss case studies.  Of all of them, the [LinkedIn study](https://hbr.org/product/linkedin-a/707406-PDF-ENG) especially stands out in my mind.  Why?
 
-The talk was great!  I won’t summarize the entire thing, since you can find the deck  [here](http://www.slideshare.net/startpad/startpad-countdown-9-corporate-structures-common-problems-470918).  But, I did come away with two high-level points that are arguably applicable even beyond corporate structures:
+- It gets at the essence of what all ventures (especially start-ups) need to deeply understand:
+  - Segmentation: Who are my customers?
+  - Positioning: Why do they care about me?
+  - Monetization: Do they care enough about me to pay me?
+- It shows the importance of addressing the above questions **periodically**.  In fact, the case study profiles LinkedIn two years into their existence (mid-2005) when they already had over 4.5M members but insufficient revenues.
 
-**Disclaimer: I am not a lawyer, and I cannot be held responsible for accuracy of the information below. Use at your own risk.**
+The segments that LinkedIn ultimately identified were
 
-# Keep things “standard”
-Your time is at a premium.  You likely want to use that time to innovate in how you serve your customers or how you make money and not in constructing complicated corporate structures.  If you keep things standard, you can use your lawyer’s document templates with minimal changes.  If not, you will be spending time and money on customized documents.  Further, keeping things standard removes a source of potential friction and/or extra due diligence time when you are raising money.
+- Relationship Managers – 90% of the user base who mostly keep up with people they know
+- Networkers – 5% of the user base who indiscriminately build relationships and often serve as intermediaries
+- Contactors – 5% of the user base who are recruiters, sales, business development folks
 
-As an example, consider an S-Corporation structure over an LLC structure if you are planning on raising money.  An S-Corporation is less flexible.  But, as a result, it is more of a known quantity.
+LinkedIn used this discovery to update their freemium model.  While Relationship Managers represented the majority of the user base, it was unclear if they would pay for premium services.  But, this large **self-qualified** 4M user base was an attractive target to the Contactors and unique to LinkedIn.  This motivated LinkedIn to introduce the successful paid service, InMail, which lets Contactors reach the LinkedIn user base:
 
-# Hope for the best, but also plan for the worst
-The reality is that many startups fail.  Even those that succeed have hiccups along the way.
+![LinkedIn]({{ site.baseurl }}/images/ongoing-segmentation-linkedin.png)
 
-As an example, consider vesting founder shares.  This way, if a founder leaves, you have a) enough “room” in your capitalization table to find a replacement, and b) you can still raise money because investors are less likely to feel that they are overcompensating a departed founder.  Vesting is something you should consider up front, since readjusting the capitalization table later in the process can have significant tax consequences.
+Have you performed a similar exercise in your company recently?  When I relate this LinkedIn study to various points in the history of Faves.com and exploit the benefit of 20/20 hindsight, certainly a few things emerge that I would have done differently.  But, that’s for another post:)

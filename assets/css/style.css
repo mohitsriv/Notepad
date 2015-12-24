@@ -273,8 +273,8 @@ main,
 .notepad-content .notepad-index-post {
     /*visibility: hidden;*/
     
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+    /*padding-top: 2.5rem;*/
+    padding-bottom: 1.5rem;
     border-bottom: 0.0625rem solid #d9d9d9;
 }
 .notepad-content .notepad-index-post:first-of-type {
@@ -300,8 +300,14 @@ main,
     text-align: center;
 }
 @media only screen and (max-width: 40em) {
-    .notepad-content .notepad-index-post .notepad-post-meta {
+    .datetime {
         display: none;
+    }
+    .notepad-post-header {
+        padding-top: 1.5rem;
+    }
+    .notepad-content .notepad-index-post .notepad-index-post-tags {
+        padding-bottom: 0px !important;
     }
 }
 @media only screen and (min-width: 40.063em) {

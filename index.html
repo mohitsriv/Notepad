@@ -52,7 +52,7 @@ tags: [Mohit, Srivastava, Seattle, Microsoft, cloud, product management]
 	    {% if paginator.previous_page == 1 %}
 	    <a class="newer-posts" href="{{ paginator.previous_page_path }}"><i class="fa fa-chevron-left"></i> Newer</a>
 	    {% else %}
-	    <a class="newer-posts" href="{{ paginator.next_page_path }}"><i class="fa fa-chevron-left"></i> Newer</a>
+	    <a class="newer-posts" href="{{ paginator.previous_page_path }}"><i class="fa fa-chevron-left"></i> Newer</a>
 	    {% endif %}
 	{% else %}
     <span class="newer-posts faded"><i class="fa fa-chevron-left"></i> Newer</span>

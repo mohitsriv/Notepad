@@ -1,16 +1,17 @@
 ---
 layout: post
 title: Same Blog (Mostly), a New Name, and SEO
-description: "Just about everything you'll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
+description: "A new domain name and SEO"
 modified: 2009-10-24
 category: hosted software
 tags: []
 imagefeature:
 comments: true
 share: true
+excerpt_separator: <!--more-->
 excerpt_image: same-blog-rebrand.png
 ---
-As you may have noticed, I have rebranded this blog from This Hosted Life to Cloud Mouth. A few weekends ago, I decided I would like to start blogging again and with a greater emphasis on [Windows Azure](http://azure.com), the cloud services platform I am working on at Microsoft. So, I went to GoDaddy’s domain name search and decided not to get up until I found a domain name I liked. I sort of knew I wanted “cloud” in the name, and it eventually hit me that I could play off the fact that “cloud” rhymes with “loud”. Unfortunately, cloudmouth.com was unavailable. But, I was okay with a .net domain name instead, and thankfully cloudmouth.net was available!
+As you may have noticed, I have rebranded this blog from This Hosted Life to Cloud Mouth. <!--more--> A few weekends ago, I decided I would like to start blogging again and with a greater emphasis on [Windows Azure](http://azure.com), the cloud services platform I am working on at Microsoft. So, I went to GoDaddy’s domain name search and decided not to get up until I found a domain name I liked. I sort of knew I wanted “cloud” in the name, and it eventually hit me that I could play off the fact that “cloud” rhymes with “loud”. Unfortunately, cloudmouth.com was unavailable. But, I was okay with a .net domain name instead, and thankfully cloudmouth.net was available!
 
 ![Rebrand]({{ site.baseurl }}/images/same-blog-rebrand.png)
 

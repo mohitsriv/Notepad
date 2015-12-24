@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Deriving a Game Plan from Ambiguity – Essential Resources
-description: "Just about everything you'll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
+description: "Product Management resources"
 modified: 2008-10-28
 category: entrepreneurship
 tags: []
