@@ -3,8 +3,8 @@ layout: post
 title: Microblogging with Twitter & Faves
 description: "Microblogging with Twitter & Faves."
 modified: 2008-05-09
-category: hosted software
-tags: []
+category: 
+tags: [hosted software]
 imagefeature:
 comments: true
 share: true

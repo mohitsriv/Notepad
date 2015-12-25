@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Tag Index
+title: Posts by Category
 permalink: /tags/index.html
 description: "An archive of posts sorted by tag."
 ---
 <ul class="tag-box inline">
-{% assign tags_list = site.tags %}  
+{% assign tags_list = site.tags | sort %}  
   {% if tags_list.first[0] == null %}
     {% for tag in tags_list %} 
     	<li><a href="#{{ tag }}">{{ tag | capitalize }} <span>{{ site.tags[tag].size }}</span></a></li>
@@ -18,7 +18,8 @@ description: "An archive of posts sorted by tag."
 {% assign tags_list = nil %}
 </ul>
 
-{% for tag in site.tags %} 
+{% assign tags_list = site.tags | sort %}
+{% for tag in tags_list | sort %} 
 	<h2 id="{{ tag[0] }}">{{ tag[0] | capitalize }}</h2>
 	<ul class="post-list">
 		{% assign pages_list = tag[1] %}  

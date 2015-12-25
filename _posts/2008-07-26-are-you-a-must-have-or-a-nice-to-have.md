@@ -3,8 +3,8 @@ layout: post
 title: Are you a “Must-Have” or a “Nice-To-Have”?
 description: "Just about everything you'll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
 modified: 2008-07-26
-category: entrepreneurship
-tags: []
+category: 
+tags: [entrepreneurship]
 imagefeature:
 comments: true
 share: true

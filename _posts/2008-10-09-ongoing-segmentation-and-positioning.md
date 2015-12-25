@@ -3,8 +3,8 @@ layout: post
 title: Ongoing Segmentation and Positioning
 description: "Learnings from LinkedIn"
 modified: 2008-10-09
-category: entrepreneurship
-tags: []
+category: 
+tags: [entrepreneurship]
 imagefeature:
 comments: true
 share: true

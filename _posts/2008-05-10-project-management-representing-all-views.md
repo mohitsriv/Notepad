@@ -3,11 +3,12 @@ layout: post
 title: Project Management - Representing All Views
 description: "Takeaways from Making Things Happen."
 modified: 2008-05-10
-category: entrepreneurship 
+category:  
 tags: [entrepreneurship, project management]
 imagefeature:
 comments: true
 share: true
+excerpt_image: project-management-venn.png
 ---
 I am currently reading Scott Berkun’s excellent book on project management, [Making Things Happen](http://www.scottberkun.com/making-things-happen/) and am enjoying it for it’s directness. It goes straight to the essence of being an effective project manager and leaves specific methodologies to other books.
 

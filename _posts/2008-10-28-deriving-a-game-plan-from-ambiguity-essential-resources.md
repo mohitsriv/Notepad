@@ -3,8 +3,8 @@ layout: post
 title: Deriving a Game Plan from Ambiguity – Essential Resources
 description: "Product Management resources"
 modified: 2008-10-28
-category: entrepreneurship
-tags: []
+category: 
+tags: [entrepreneurship]
 imagefeature:
 comments: true
 share: true

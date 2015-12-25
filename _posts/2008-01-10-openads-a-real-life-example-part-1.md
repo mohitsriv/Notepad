@@ -3,8 +3,8 @@ layout: post
 title: Openads – A Real Life Example, Part 1
 description: "Openads concepts."
 modified: 2008-01-10
-category: hosted software
-tags: []
+category: 
+tags: [hosted software]
 imagefeature:
 comments: true
 share: true

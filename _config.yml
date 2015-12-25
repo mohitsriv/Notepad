@@ -37,10 +37,10 @@ links:
     url: /
     external: false
     icon: home
-  - title: Featured Posts
-    url: /featured
+  - title: Archive
+    url: /archive
   - title: Categories
-    url: /categories
+    url: /tags
   - title: About
     url: /about
 

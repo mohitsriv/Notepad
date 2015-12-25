@@ -3,8 +3,8 @@ layout: post
 title: Same Blog (Mostly), a New Name, and SEO
 description: "A new domain name and SEO"
 modified: 2009-10-24
-category: hosted software
-tags: []
+category: 
+tags: [hosted software, microsoft azure]
 imagefeature:
 comments: true
 share: true

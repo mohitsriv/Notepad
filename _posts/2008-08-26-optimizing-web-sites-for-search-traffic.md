@@ -3,8 +3,8 @@ layout: post
 title: Optimizing Web Sites for Search Traffic
 description: "SEM techniques that helped drive over one million visits per month."
 modified: 2008-08-26
-category: hosted software
-tags: []
+category: 
+tags: [hosted software]
 imagefeature:
 comments: true
 share: true

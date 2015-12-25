@@ -3,8 +3,8 @@ layout: post
 title: Faves.com – Successes and Lessons Learned
 description: "Successes and lessons learned from Faves.com"
 modified: 2009-01-31
-category: entrepreneurship
-tags: []
+category: 
+tags: [entrepreneurship]
 imagefeature:
 comments: true
 share: true
