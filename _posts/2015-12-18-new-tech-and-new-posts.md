@@ -20,7 +20,8 @@ but not set a hard commitment either. <!--more-->
 
 ![JekyllAzure]({{ site.baseurl }}/images/new-tech-jekyll-azure.png) 
 
-As part of taking the blog out of hibernation, I updated the technology that powers this blog. I've migrated the blog engine from WordPress + MySQL to [Jekyll](https://jekyllrb.com/) hosted on [Microsoft Azure App Service](https://azure.microsoft.com/en-us/services/app-service/). I author my
+As part of taking the blog out of hibernation, I updated the technology that powers this blog. The goal was to 
+pick a technology stack I am less familiar with. I've migrated the blog engine from WordPress + MySQL to [Jekyll](https://jekyllrb.com/) hosted on [Microsoft Azure App Service](https://azure.microsoft.com/en-us/services/app-service/). I author my
 posts on [GitHub](http://github.com/mohitsriv/Blog) in Markdown and then use [Travis CI](https://travis-ci.org/) to automate testing, building and publishing to Azure. I am quite satisifed
 with the whole workflow and plan to share the details in an upcoming post. 
 
