@@ -285,8 +285,8 @@ main,
 }
 @media only screen and (min-width: 40.063em) {
     .notepad-content .notepad-index-post {
-        padding-top: 4.375rem;
-        padding-bottom: 4.375rem;
+        padding-top: 2.375rem;
+        padding-bottom: 2.375rem;
     }
     .notepad-content .notepad-index-post:first-of-type {
         /*padding-top: 7.5rem;*/
