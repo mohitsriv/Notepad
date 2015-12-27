@@ -318,7 +318,7 @@ main,
 .notepad-content .notepad-index-post .notepad-post-meta .day {
     display: block;
     font-size: 3.25rem;
-    font-weight: 800;
+    font-weight: lighter;
     color: #e7c9a4;
     font-family: "Montserrat", sans-serif;
 }
@@ -356,6 +356,9 @@ main,
     margin-top: 0.625rem;
     text-align: center;
 }
+.notepad-content .notepad-index-post .notepad-post-excerpt a {
+    color: #e51843;
+}
 .notepad-content .notepad-index-post .notepad-post-excerpt p {
     margin: 0;
     font-size: 1.25rem;
@@ -369,8 +372,9 @@ main,
 .notepad-content .notepad-index-post .notepad-post-excerpt img
 {
     float: right; 
-    border-style: solid; 
+    border-style: solid;
     border-width: 1px;
+    border-color: rgb(160,160,160);
     margin-left: 10px; 
     margin-bottom: 10px;
     max-width: 19rem; 
