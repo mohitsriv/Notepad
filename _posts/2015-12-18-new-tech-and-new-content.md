@@ -30,8 +30,8 @@ with the whole workflow and plan to share the details in an upcoming post.
 While the topics I'll blog about are largely the same, here are some changes (industry and personal) that will be reflected in upcoming content and hopefully make it less cringeworthy.
 
 - Program Management (although IMHO it should just be called **Product Management** now) as a discipline **has evolved at Microsoft**, with greater emphasis on [customer development](http://www.amazon.com/Lean-Customer-Development-Building-Customers/dp/1449356354), business impact, sophisticated data-driven decision making, and agile service-oriented "hypothesize-test-repeat" delivery.  
-- I've evolved as a product manager through running a number of product management teams delivering web and 
-cloud development products – services, tools and SDKs. I also have a richer toolchain and business context after completing an MBA.
+- I've grown as a product manager through running a number of product management teams delivering web and 
+cloud development products – services, tools and SDKs. I also have a richer business toolchain and context after completing an MBA.
 - **SaaS adoption** -- both consumer and enterprise -- **has continued to accelerate**.
 - **Building software is in some ways easier and some ways harder**. 
   - Easier: PaaS has moved further "up the stack" with offerings
