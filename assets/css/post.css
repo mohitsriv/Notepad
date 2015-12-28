@@ -619,6 +619,10 @@ body,
 .notepad-page-content > div:not(.notepad-page-title) h6 {
     font-weight: bold;
 }
+.notepad-page-content > div:not(.notepad-page-title) h2
+{
+    padding-top: 0.6rem;
+}
 .notepad-page-content > div:not(.notepad-page-title) h1,
 .notepad-page-content > div:not(.notepad-page-title) h2,
 .notepad-page-content > div:not(.notepad-page-title) h3,
