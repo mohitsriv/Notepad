@@ -319,7 +319,7 @@ main,
     display: block;
     font-size: 3.25rem;
     font-weight: lighter;
-    color: #e7c9a4;
+    color: #d4d5cd;
     font-family: "Montserrat", sans-serif;
 }
 .notepad-content .notepad-index-post .notepad-post-meta .month-year {
@@ -333,7 +333,7 @@ main,
 .notepad-content .notepad-index-post .notepad-post-header .notepad-post-title {
     color: black;
     font-weight: 700;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     text-align: center;
     font-size: 1.625rem;
     margin: 0;
@@ -342,6 +342,10 @@ main,
 }
 .notepad-content .notepad-index-post .notepad-post-header .notepad-post-title a {
     color: black;
+}
+.notepad-content .notepad-index-post .notepad-post-header .notepad-post-title a:hover {
+    /*border-bottom: 0.1875rem solid #e51843; */
+    color: #e51843;
 }
 @media only screen and (min-width: 40.063em) {
     .notepad-content .notepad-index-post .notepad-post-header .notepad-post-title {
@@ -358,6 +362,13 @@ main,
 }
 .notepad-content .notepad-index-post .notepad-post-excerpt a {
     color: #e51843;
+}
+.notepad-content .notepad-index-post .notepad-post-excerpt a.notepad-post-excerpt-tags:hover {
+    color: #e51843;
+}
+.notepad-content .notepad-index-post .notepad-post-excerpt a.notepad-post-excerpt-tags
+{
+    color: rgb(160,160,160);
 }
 .notepad-content .notepad-index-post .notepad-post-excerpt p {
     margin: 0;

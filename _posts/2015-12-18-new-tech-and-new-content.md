@@ -1,7 +1,7 @@
 ---
 layout: post
-title: New Tech, New Posts 
-description: "New tech and new posts"
+title: New Tech, New Content 
+description: "New tech and new content"
 modified: 2015-12-18
 category: 
 tags: [hosted software, jekyll, microsoft azure]
@@ -11,7 +11,7 @@ share: true
 excerpt_separator: <!--more-->
 excerpt_image: new-tech-jekyll-azure.png
 ---
-Lots has happened in the **six** years since the last post. The industry has evolved. I've evolved. 
+Lots has happened in the **six** years since the last post. The industry has evolved. I've grown. 
 That means I read some of my old posts and cringe a lot. I'm still happy though I went through the exercise of
 blogging, taking out some time to reflect on topics that were top of mind then. So, I'm going to try to pick up the habit again 
 but not set a hard commitment either. <!--more-->

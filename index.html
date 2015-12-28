@@ -2,7 +2,7 @@
 layout: home
 title: Blog
 description: "The personal blog of Mohit Srivastava, PM Manager on the Microsoft Azure team."
-headline: Mohit Srivastava's thoughts on the cloud, software, product management and entrpreneurship
+headline: Mohit Srivastava's thoughts on the cloud, software, product management and entrepreneurship
 tags: [Mohit, Srivastava, Seattle, Microsoft, cloud, product management]
 ---
 {% if site.paginate %}
@@ -37,15 +37,15 @@ tags: [Mohit, Srivastava, Seattle, Microsoft, cloud, product management]
                 {% endif %}
                 <!--<p>{{ post.content | strip_html | truncatewords:40 }}</p>-->
                 <p>{{ post.excerpt }}</p>
-                <p style="font-size:14px;margin-top:5px">
-                    <a href="{{ site.baseurl }}{{ post.url }}">Read more...</a>
+                <p style="font-size:16px;margin-top:5px">
+                    <a href="{{ site.baseurl }}{{ post.url }}">Read more</a>
                     <span style="color:rgb(160,160,160)">
                         &vert;  
                             {% assign tagsize = post.tags.size %}
                             {%if tagsize != 0 %} 
                                 Posted in: 
                                 {% for tag in post.tags %}
-                                    <a style="color:rgb(160,160,160)" href="{{ site.baseurl }}/tags/index.html#{{ tag | cgi_encode }}" data-toggle="tooltip" title="Posts tagged with {{ tag }}" rel="tag">{{ tag }}</a>{% unless forloop.last %}&comma;{% endunless %}
+                                    <a class="notepad-post-excerpt-tags" href="{{ site.baseurl }}/tags/index.html#{{ tag | cgi_encode }}" data-toggle="tooltip" title="Posts tagged with {{ tag }}" rel="tag">{{ tag }}</a>{% unless forloop.last %}&comma;{% endunless %}
                                 {% endfor %}
                             {% endif %}
                     </span>

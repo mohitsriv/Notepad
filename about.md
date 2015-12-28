@@ -28,7 +28,7 @@ chart: true
 
 Hi, I'm **Mohit Srivastava**, and this is my blog. I'll use this space to blog on topics
 that align with my professional passions. That means software, cloud, product management
-and entrpreneurship. That said, I spend a lot of my personal time on these topics, so it's 
+and entrepreneurship. That said, I spend a lot of my personal time on these topics, so it's 
 not exactly a *professional* blog. Accordingly, the views here are mine and not those of 
 Microsoft, my employer.
 
