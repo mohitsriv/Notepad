@@ -22,7 +22,7 @@ but not set a hard commitment either. <!--more-->
 
 As part of taking the blog out of hibernation, I updated the technology that powers this blog. The goal was to 
 pick a technology stack I am less familiar with. I've migrated the blog engine from WordPress + MySQL to [Jekyll](https://jekyllrb.com/) hosted on [Microsoft Azure App Service](https://azure.microsoft.com/en-us/services/app-service/). I author my
-posts on [GitHub](http://github.com/mohitsriv/Blog) in Markdown and then use [Travis CI](https://travis-ci.org/) to automate testing, building and publishing to Azure. I am quite satisifed
+posts in Markdown, mostly using Visual Studio Code as my editor. I then push the posts to [GitHub](http://github.com/mohitsriv/Blog) and have setup [Travis CI](https://travis-ci.org/) to subsequently automate testing, building and publishing to Azure from GitHub when a commit is detected. I am quite satisifed
 with the whole workflow and plan to share the details in an upcoming post. 
 
 # Content changes
@@ -32,7 +32,7 @@ While the topics I'll blog about are largely the same, here are some changes (in
 - Program Management (although IMHO it should just be called **Product Management** now) as a discipline **has evolved at Microsoft**, with greater emphasis on [customer development](http://www.amazon.com/Lean-Customer-Development-Building-Customers/dp/1449356354), business impact, sophisticated data-driven decision making, and agile service-oriented "hypothesize-test-repeat" delivery.  
 - I've grown as a product manager through running a number of product management teams delivering web and 
 cloud development products – services, tools and SDKs. I also have a richer business toolchain and context after completing an MBA.
-- **SaaS adoption** -- both consumer and enterprise -- **has continued to accelerate**.
+- **SaaS adoption** -- both consumer and enterprise -- **has continued to accelerate**. Enterprise SaaS **purchasing** decisions are often **decentralized** and agile without IT involvement. These trends mean that **SaaS integration** is an increasingly critical part of building enterprise services and solutions in the cloud.
 - **Building software is in some ways easier and some ways harder**. 
   - Easier: PaaS has moved further "up the stack" with offerings
 such as Microsoft Azure App Service and Heroku. A number of development frameworks -- e.g. jQuery, Bootstrap & Angular on
