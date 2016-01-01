@@ -22,7 +22,7 @@ but not set a hard commitment either. <!--more-->
 
 As part of taking the blog out of hibernation, I updated the technology that powers this blog. The goal was to 
 pick a technology stack I am less familiar with. I've migrated the blog engine from WordPress + MySQL to [Jekyll](https://jekyllrb.com/) hosted on [Microsoft Azure App Service](https://azure.microsoft.com/en-us/services/app-service/). I author my
-posts in Markdown, mostly using Visual Studio Code as my editor. I then push the posts to [GitHub](http://github.com/mohitsriv/Blog) and have setup [Travis CI](https://travis-ci.org/) to subsequently automate testing, building and publishing to Azure from GitHub when a commit is detected. I am quite satisifed
+posts in Markdown, mostly using Visual Studio Code as my editor. I then push the posts to [GitHub](http://github.com/mohitsriv/Blog). Finally, I have setup [Travis CI](https://travis-ci.org/) to automatically test, build and publish to Azure from GitHub when a commit is detected. I am quite satisifed
 with the whole workflow and plan to share the details in an upcoming post. 
 
 # Content changes
