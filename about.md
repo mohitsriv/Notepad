@@ -33,7 +33,7 @@ not exactly a *professional* blog. Accordingly, the views here are mine and not 
 Microsoft, my employer.
 
 I'm currently at Microsoft and have run a number of product management teams delivering
-web and cloud development products -- services, tools and SDKs. I love it because I 
+web and cloud development products -- services, tools and SDKs. Recently, this has included [Visual Studio Web tooling](http://visualstudio.com/web) and Azure API development & management services. I love it because I 
 get to keep my geek side up-to-date while interacting with all kinds of folks, external
 and internal. Prior to that, I was co-founder and CTO of Faves.com (formerly Blue Dot), 
 a microblogging startup. We ultimately did not make it but had a number of successes
