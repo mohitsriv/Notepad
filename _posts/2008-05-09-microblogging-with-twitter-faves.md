@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Microblogging with Twitter & Faves
-description: "Microblogging with Twitter & Faves."
+title: Microblogging with Twitter and Faves
+description: "Microblogging with Twitter and Faves."
 modified: 2008-05-09
 category: 
 tags: [hosted software]
