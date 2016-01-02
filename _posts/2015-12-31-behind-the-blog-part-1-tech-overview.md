@@ -37,7 +37,7 @@ First off, just for learning reasons, I wanted to use at least some technologies
 
 # Jekyll, Markdown and GitHub
 
-The above requirements quickly led me to [GitHub Pages](https://pages.github.com/). It is static file hosting but with a twist. GitHub Pages [supports Jekyll](https://help.github.com/articles/using-jekyll-with-pages/), a simple blog-aware static site generator. I was a bit apprehensive about using a static site generator instead of a dynamically generating pages with a server side framework. But, Jekyll supports includes and templating giving it some of the power of a server side framework. This makes it possible to generate at least somewhat sophisticated and personalized sites while not having to copy stuff (e.g. headers, footers, index pages) all over the place. It's likely sufficient for many blogs but wouldn't quite work for sites with material requirements beyond that -- e.g. implementing user login, connecting to backends, rendering conditoinally based on user agent, generating urls based on host header, etc.
+The above requirements quickly led me to [GitHub Pages](https://pages.github.com/). It is static file hosting but with a twist. GitHub Pages [supports Jekyll](https://help.github.com/articles/using-jekyll-with-pages/), a simple blog-aware static site generator. I was a bit apprehensive about using a static site generator instead of a dynamically generating pages with a server side framework. But, Jekyll supports includes and templating giving it some of the power of a server side framework. This makes it possible to generate at least somewhat sophisticated and personalized sites while not having to copy stuff (e.g. headers, footers, index pages) all over the place. It's likely sufficient for many blogs but wouldn't quite work for sites with material requirements beyond that -- e.g. implementing user login, connecting to backends, rendering conditionally based on user agent, generating urls based on host header, etc.
 
 I also found a template I sort of liked: [hmfaysal/Notepad](https://github.com/hmfaysal/Notepad). It implements responsive design, has a distinctive look, and integrates both Disqus and Google Analytics. I could customize it simply by [forking it and making changes](https://github.com/mohitsriv/Blog)!
 
@@ -66,6 +66,6 @@ Finally, I needed a place to run the Jekyll build process for generating my site
 
 # Next
 
-Overall, the resulting workflow is as simple as using GitHub Pages but with more CI and more hosting features. That said, I do miss being able to dynamically generate pages with a server side framework like ASP.NET or Node.js.
+Overall, the resulting workflow is as simple as using GitHub Pages but with more CI and more hosting features. That said, I do miss a bit being able to dynamically generate pages with a server side framework like ASP.NET or Node.js.
 
 In future posts, I'll detail each of the parts -- Jekyll, GitHub, Travis CI and Microsoft Azure App Service.
