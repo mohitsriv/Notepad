@@ -61,7 +61,7 @@ Finally, I needed a place to run the Jekyll build process for generating my site
 - It's a hosted service. I don't need to run anything.
 - It's free for public repositories on GitHub, such as [that of my blog](https://github.com/mohitsriv/blog).
 - It integrates with GitHub.
-- It has good support for Ruby. While I am not specifically versed or attracted to Ruby, it is needed to build Jekyll. 
+- It has good support for Ruby. While I am not specifically vested in Ruby, it is needed to build Jekyll. 
 - By virtue of using Docker containers, it gives me a completely clean build environment every time.
 
 # Next
