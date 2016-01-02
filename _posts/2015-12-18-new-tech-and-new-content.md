@@ -14,14 +14,14 @@ excerpt_image: new-tech-jekyll-azure.png
 Lots has happened in the **six** years since the last post. The industry has evolved. I've grown. 
 That means I read some of my old posts and cringe a lot. I'm still happy though I went through the exercise of
 blogging, taking out some time to reflect on topics that were top of mind then. So, I'm going to try to pick up the habit again 
-but not set a hard commitment either. <!--more-->
+but not set a hard post/week commitment either. <!--more-->
 
 # Updated blog engine
 
 ![JekyllAzure]({{ site.baseurl }}/images/new-tech-jekyll-azure.png) 
 
 As part of taking the blog out of hibernation, I updated the technology that powers this blog. A goal was to use at least some technologies I am less familiar with. I've migrated the blog engine from WordPress + MySQL to [Jekyll](https://jekyllrb.com/) hosted on [Microsoft Azure App Service](https://azure.microsoft.com/en-us/services/app-service/). I author my
-posts in Markdown, mostly using Visual Studio Code as my editor. I then push the posts to [GitHub](http://github.com/mohitsriv/Blog). Finally, I have setup [Travis CI](https://travis-ci.org/) to automatically test, build and publish to Azure from GitHub when a commit is detected. I am quite satisifed
+posts in Markdown, mostly using Visual Studio Code as my editor. I then push the posts to [GitHub](http://github.com/mohitsriv/Blog). Finally, I have setup [Travis CI](https://travis-ci.org/) to automatically test, build and publish to Azure from GitHub when a commit is detected. I am satisfied
 with the workflow and plan to share the details in an upcoming post. 
 
 # Content changes
