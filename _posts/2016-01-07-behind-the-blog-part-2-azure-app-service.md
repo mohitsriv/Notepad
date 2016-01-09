@@ -11,11 +11,11 @@ share: true
 excerpt_separator: <!--more-->
 excerpt_image: behind-the-blog-part-2.png
 ---
-In Part 1 of this series, I summarized the tech behind this blog.  This post will dive deeper into the [Azure App Service](https://azure.microsoft.com/en-us/services/app-service/) piece -- how to Git deploy a [Jekyll](https://jekyllrb.com/)-generated static site and how to use the URL rewrite module to ensure friendly URLs mindful of SEO.<!--more-->
+In Part 1 of this series, I summarized the tech behind this blog.  This post dives deeper into the [Azure App Service](https://azure.microsoft.com/en-us/services/app-service/) piece -- how to Git deploy a [Jekyll](https://jekyllrb.com/)-generated static site and how to use the URL rewrite module to ensure friendly URLs mindful of SEO.<!--more-->
 
 ![Behind the blog - App Service]({{ site.baseurl }}/images/behind-the-blog-part-2.png)
 
-If you are generating your site locally with Jekyll or another static file generator, then App Service is the only cloud piece in the above diagram you need. You simply Git deploy or FTP your generated files to App Service.  However, using GitHub and Travis gives you authoring, source control and CI in the cloud (all requirements for me) and will be detailed in future posts.
+If you are generating your site locally with Jekyll or another static file generator, then App Service is the only cloud piece in the above diagram you need. You simply Git deploy or FTP your generated files to App Service.  However, using GitHub and Travis gives you cloud authoring, source control and continuous integration + delivery (all requirements for me) and will be detailed in future posts.  *Note: App Service also supports continuous delivery triggered off of commits in GitHub. While it supports a number of languages, it does not have out-of-the-box support for Ruby, a requirement for building Jekyll sites. So, I externalized the continuous delivery with Travis.*
 
 # Friendly URLs
 
@@ -87,8 +87,8 @@ These 301 redirect rules, unlike the previous one, match the part of the URL fol
 
 There are actually two types of rules in play here:
 
-1. 301 redirect any request with a .html extension to one without the .html extension
-2. Have App Service append the .html extension *under the covers* (but not visible to the user) so that the extensionless URLs get mapped to an actual .html file in the filesystem.
+1. Redirect rule: 301 redirect any request with a .html extension to one without the .html extension
+2. Rewrite rule: Have App Service append the .html extension *under the covers* (but not visible to the user) so that the extensionless URLs get mapped to an actual .html file in the filesystem.
 
 {% highlight xml %}
 <?xml version="1.0" encoding="UTF-8"?>
@@ -131,7 +131,7 @@ Uploading the generated site is just standard Git.
 # clone the latest version of the blog from App Service
 git clone https://$AZURE_WA_USERNAME:$AZURE_WA_PASSWORD@cloudmouth.scm.azurewebsites.net:443/cloudmouth.git ../Blog.generated
 
-# copy generated HTML site to 'generated' branch
+# copy generated HTML site to 'generated' folder
 cp -R _site/* ../Blog.generated
 cd ../Blog.generated
 
