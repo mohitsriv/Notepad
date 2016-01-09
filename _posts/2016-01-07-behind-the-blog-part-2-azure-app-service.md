@@ -11,7 +11,7 @@ share: true
 excerpt_separator: <!--more-->
 excerpt_image: behind-the-blog-part-2.png
 ---
-In Part 1 of this series, I summarized the tech behind this blog.  This post dives deeper into the [Azure App Service](https://azure.microsoft.com/en-us/services/app-service/) piece -- how to Git deploy a [Jekyll](https://jekyllrb.com/)-generated static site and how to use the URL rewrite module to ensure friendly URLs mindful of SEO.<!--more-->
+Part 1 of this series summarized the tech behind this blog.  This post dives deeper into the [Azure App Service](https://azure.microsoft.com/en-us/services/app-service/) piece -- how to Git deploy a [Jekyll](https://jekyllrb.com/)-generated static site and how to use the URL rewrite module to ensure friendly URLs mindful of SEO.<!--more-->
 
 ![Behind the blog - App Service]({{ site.baseurl }}/images/behind-the-blog-part-2.png)
 
