@@ -25,7 +25,7 @@ For this exercise, I've gone with the last option -- my personal Twitter feed. T
 
 Here are some insights that have emerged from the dashboard.  All times are Pacific:
 
-- I get 500-600 Tweets per weekday in my feed.
+- I get 600-700 Tweets per weekday in my feed.
 - There are ~75 distinct users whose Tweets I see in my feed every day.  Over a week, it's ~125 users.
 - By far, [Mark Andreeseen](https://twitter.com/pmarca) is the top user in my feed, generating 103 Tweets in the last 24 hours and 166 Tweets in the 24 hours before that.
 - Of the top 12 users the last two days, only three are folks I personally know.  All three are co-workers.
