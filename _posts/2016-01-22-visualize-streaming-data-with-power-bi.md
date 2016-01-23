@@ -21,9 +21,29 @@ Since wiring up an IoT device is part two, I looked for real-time signals availa
 
 For this exercise, I've gone with the last option -- my personal Twitter feed. That said, armed with this toolchain, I look to improve the Power BI dashboards we already have available for the products I work on.
 
-![Flow]({{ site.baseurl }}/images/visualize-streaming-ex-full.png)
+![Dashboard]({{ site.baseurl }}/images/visualize-streaming-ex-full.png)
 
-After doing a bit of research, I arrived at the following approach:
+Here are some insights that have emerged from the dashboard.  All times are Pacific:
+
+- I get 500-600 Tweets per weekday in my feed.
+- There are ~75 distinct users whose Tweets I see in my feed every day.  Over a week, it's ~125 users.
+- By far, [Mark Andreeseen](https://twitter.com/pmarca) is the top user in my feed, generating 103 Tweets in the last 24 hours and 166 Tweets in the 24 hours before that.
+- Of the top 12 users the last two days, only three are folks I personally know.  All three are co-workers.
+- I get the most Tweets each day between noon and 3pm.
+- In the last three days, five of the users with at least two Tweets have an average hourly sentiment score of at least 2.5 (on a scale of 0-4, where 4 is the most positive). That includes three "celebrity" accounts -- [RocketSpace](https://twitter.com/RocketSpace), [Boris Becker](https://twitter.com/TheBorisBecker), [Abel James](https://twitter.com/fatburnman) -- and two folks I know personally -- [Brady Gaster](https://twitter.com/bradygaster), [Rick Rainey](https://twitter.com/rickraineytx).  *It's perhaps not surprising to see Becker in this list with Novak Djokovic [the #1 tennis player in the world, coached by Becker] playing phenomenally at the moment:)*
+- While I don't yet have a full week of data, the most popular hour x day combinations so far are Friday 9pm and Thursday 4pm with 54 and 56 Tweets, respectively. 
+
+In the remainder of this post:
+
+- [Overall approach](#overall-approach)
+- [Pump the data into Azure Event Hubs](#pump-the-data-into-azure-event-hubs)
+- [Process real-time streams with Azure Stream Analytics](#process-real-time-streams-with-azure-stream-analytics)
+- [Visualize the data with Power BI](#visualize-the-data-with-power-bi)
+- [Next](#next)
+
+# Overall approach
+
+Rewinding now, here is the approach I took to build the dashboard after doing a bit of research:
 
 ![Flow]({{ site.baseurl }}/images/visualize-streaming-flow.png)
 
@@ -35,7 +55,7 @@ After doing a bit of research, I arrived at the following approach:
 
 Further details on some of the steps are below:
 
-# Pump the data in Azure Event Hubs
+# Pump the data into Azure Event Hubs
 After deciding I wanted to take Twitter streaming data and pump it into Azure Event Hubs, I was fortunate to stumble upon a sample from the Stream Analytics team that was a great starting point. It is a .NET console app that reads from the Twitter stream API, uses [http://www.sentiment140.com](http://www.sentiment140.com) to determine sentiment and then sends the resulting data to Event Hubs.  The [accompanying article](https://azure.microsoft.com/en-us/documentation/articles/stream-analytics-twitter-sentiment-analysis-trends/) walks through a number of these steps, so I won't repeat all that below. I'll focus on the Power BI side (which is not covered), as well as any deltas from the article:
 
 To get started, I [forked the sample project](https://github.com/mohitsriv/azure-stream-analytics/tree/master/DataGenerators/TwitterClient) and made the following changes:
@@ -123,11 +143,21 @@ Here are the exact questions I typed to build each of the widgets on the dashboa
 - **Tweets by user two days ago (bar chart)**: show count where time is last 48 hours and not last 24 hours group by username sorted by count
 - **Tweets per hour, last week (bar chart)**: show sum of count group by hourlocal where time is last 168 hours as column
 - **Tweets per day, last week (bar chart)**: show count last 168 hours group by daystrlocal as column
-- **Sentiment and count by user, last 72 hours ([bubble chart](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-tutorial-scatter/#create-a-bubble-chart) -- my favorite!)**: show total count and average of avg group by username last 168 hours where count > 2
+- **Sentiment and count by user, last 72 hours ([scatter chart](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-tutorial-scatter) -- my favorite!)**: show total count and average of avg group by username last 168 hours where count > 2
 - **Tweets per hour and day, last three days (bar chart)**: show count of tweets group by timelocal last 72 hours as column
 
-Unfortunately, I cannot share the finished product since right now sharing is [limited to users in the same organization only](https://ideas.powerbi.com/forums/265200-power-bi-ideas/suggestions/6872640-share-with-external-users-outside-my-organisation).  But, I captured a good chunk of it (including the bubble chart) in the image at the top of the article.
+In addition, I created a [bubble chart](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-tutorial-scatter#create-a-bubble-chart) to show the most popular hour x day combinations.  A bubble chart is a scatter chart with the bubble size representing an additional dimension:
+
+![Bubble]({{ site.baseurl }}/images/visualize-streaming-bubble.png)
+
+For this, I used the chart builder:
+
+![Bubble builder]({{ site.baseurl }}/images/visualize-streaming-bubble-build.png)
+
+Note the use of the **HoursAndDayLocal** field, which I generated earlier in Stream Analytics with **Hours x 10 + Day**.  This ensures a unique value for each hour and day combination, each of which ends up being a bubble and the dimension on which we add up the counts.  Also note, that the columns and rows are aggregate values.  This effectively makes them categorical.  I could have chosen one of many functions -- Min, Max, Avg -- and they would have all had the same effect in this case.  With an hour window, all rows share the same HourLocal and DayLocal since the incoming data is aggregated by hour.
 
 # Next
 
-Hope this helps!  I hope to soon get use the same backend for getting insights from an IoT device (e.g. a WI-FI connected scale, a heat/humidity sensor, etc.).
+Unfortunately, I cannot share the finished dashboard since right now sharing is [limited to users in the same organization only](https://ideas.powerbi.com/forums/265200-power-bi-ideas/suggestions/6872640-share-with-external-users-outside-my-organisation).  But, I captured a good chunk of it (including the bubble chart) in the image at the top of the article.
+
+Hope this post was helpful!  I hope to soon get use the same backend for getting insights from an IoT device (e.g. a WI-FI connected scale, a heat/humidity sensor, etc.).
