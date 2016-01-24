@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Microblogging with Twitter and Faves
 description: "Microblogging with Twitter and Faves."
