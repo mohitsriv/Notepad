@@ -4,7 +4,7 @@ title: Visualize real-time data with Power BI and Azure Stream Analytics
 description: "Visualize real-time data with Power BI and Azure Stream Analytics"
 modified: 2016-01-22
 category: 
-tags: [hosted software, microsoft azure, IoT, Power BI, Stream Analytics]
+tags: [hosted software, microsoft azure, iot, power bi, stream analytics]
 imagefeature:
 comments: true
 share: true
