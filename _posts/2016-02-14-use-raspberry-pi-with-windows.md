@@ -2,7 +2,7 @@
 layout: post
 title: Use the Raspberry Pi 2 with Windows 10 IoT, Azure and Power BI
 description: "Visualize real-time IoT data with Azure IoT Hub, Stream Analytics and Power BI"
-modified: 2016-02-14
+modified: 2016-02-19
 category: 
 tags: [hosted software, microsoft azure, iot, power bi, stream analytics, uwp, .net, c#, windows 10]
 imagefeature:
@@ -108,7 +108,12 @@ This step is [documented](http://ms-iot.github.io/content/en-US/win10/samples/Ki
 
 In my [previous post]({{ site.baseurl }}/visualize-streaming-data-with-power-bi), I used Azure Event Hubs for ingestion.  However, Azure Iot Hub is [optimized](https://azure.microsoft.com/en-us/documentation/articles/iot-hub-compare-event-hubs/) for the use case of gathering telemetry from devices.  The following benefit especially resonates: "Security: Provides per-device identity and revocable access control".
 
-For my solution, this is a perfect abstraction.  I modeled the Pi as two devices -- one virtual (for the Bellevue outdoor temperature) and one real (for the temperate as measured from the sensor).  I didn't have to do it that way.  I could have had the virtual one running in the cloud as a WebJob, but I just chose to run both on the Pi.  Regardless, I would have still had two device identities.
+*[UPDATE: 2/19/2016] My colleague [Brady Gaster](https://twitter.com/bradygaster) pointed out I left off a number of steps around device registration that precde the below code sample.  For example, where do **device.IotHubName** and **device.IotHubKey** come from below?  I may elaborate in a future post.  But, in the meantime, the following two articles are especially helpful:*
+
+- *[Get started with Azure IoT Hub for .NET](https://azure.microsoft.com/en-us/documentation/articles/iot-hub-csharp-csharp-getstarted) - I followed all the steps here except for [Create a device identity](https://azure.microsoft.com/en-us/documentation/articles/iot-hub-csharp-csharp-getstarted/#create-a-device-identity).  The reason is registration can be done more easily with the Device Explorer tool (next link below).* 
+- *[How to use Device Explorer for IoT Hub devices](https://github.com/Azure/azure-iot-sdks/blob/master/tools/DeviceExplorer/doc/how_to_use_device_explorer.md)*
+
+For my solution, IoT Hub's per-device identity is a perfect abstraction.  I modeled the Pi as two devices -- one virtual (for the Bellevue outdoor temperature) and one real (for the temperate as measured from the sensor).  I didn't have to do it that way.  I could have had the virtual one running in the cloud as a WebJob, but I just chose to run both on the Pi.  Regardless, I would have still had two device identities.
 
 {% highlight csharp %}
 foreach (var device in _devices)
