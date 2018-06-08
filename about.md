@@ -30,9 +30,9 @@ Hi, I'm **Mohit Srivastava**, and this is my blog. I'll use this space to blog o
 that align with my professional passions. That means software, cloud, product management
 and entrepreneurship. That said, I spend a lot of my personal time on these topics, so it's 
 not exactly a *professional* blog. Accordingly, the views here are mine and not those of 
-Microsoft, my employer.
+Amazon, my employer.
 
-I'm currently at Microsoft and have run a number of product management teams delivering
+Prior to Amazon, I was at Microsoft and ran a number of product management teams delivering
 web and cloud development products -- services, tools and SDKs. Recently, this has included [Visual Studio Web tooling](http://visualstudio.com/web) and Azure API development services. I love it because I 
 get to keep my geek side up-to-date while interacting with all kinds of folks, external
 and internal. Prior to that, I was co-founder and CTO of Faves.com (formerly Blue Dot), 
