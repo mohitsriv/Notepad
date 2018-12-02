@@ -23,7 +23,7 @@ tags: [Mohit, Srivastava, Seattle, Microsoft, cloud, product management]
         <div class="small-12 medium-9 large-10 columns">
             <header class="notepad-post-header">
                 <h3 class="notepad-post-title">
-                    <a href="{{ site.baseurl }}{{ post.url }}">
+                    <a href="{{ site.url }}{{ post.url }}">
                         {{ post.title }}
                     </a>
                 </h3>
@@ -33,21 +33,21 @@ tags: [Mohit, Srivastava, Seattle, Microsoft, cloud, product management]
             </header>
             <section class="notepad-post-excerpt">
                 {% if post.excerpt_image %} 
-                <img src="{{ site.baseurl }}/images/{{ post.excerpt_image }}"></img>
+                <img src="{{ site.url }}/images/{{ post.excerpt_image }}"></img>
                 {% endif %}
                 <!--<p>{{ post.content | strip_html | truncatewords:40 }}</p>-->
                 <p>{{ post.excerpt }}</p>
                 <p style="font-size:16px;margin-top:5px">
-                    <a href="{{ site.baseurl }}{{ post.url }}">Read more</a>
+                    <a href="{{ site.url }}{{ post.url }}">Read more</a>
                     <span style="color:rgb(160,160,160)">
                         &vert;
-                            <a class="notepad-post-excerpt-tags" href="{{ site.baseurl }}{{ post.url }}#disqus_thread">Comments</a>
+                            <a class="notepad-post-excerpt-tags" href="{{ site.url }}{{ post.url }}#disqus_thread">Comments</a>
                         &vert;  
                             {% assign tagsize = post.tags.size %}
                             {%if tagsize != 0 %} 
                                 Posted in: 
                                 {% for tag in post.tags %}
-                                    <a class="notepad-post-excerpt-tags" href="{{ site.baseurl }}/tags/index.html#{{ tag | cgi_encode }}" data-toggle="tooltip" title="Posts tagged with {{ tag }}" rel="tag">{{ tag }}</a>{% unless forloop.last %}&comma;{% endunless %}
+                                    <a class="notepad-post-excerpt-tags" href="{{ site.url }}/tags/index.html#{{ tag | cgi_encode }}" data-toggle="tooltip" title="Posts tagged with {{ tag }}" rel="tag">{{ tag }}</a>{% unless forloop.last %}&comma;{% endunless %}
                                 {% endfor %}
                             {% endif %}
                     </span>
@@ -55,7 +55,7 @@ tags: [Mohit, Srivastava, Seattle, Microsoft, cloud, product management]
             </section>
             
                 <!--<div class="notepad-index-post-tags">
-                {% for tag in post.tags %}<a href="{{ site.baseurl }}/tags/index.html#{{ tag | cgi_encode }}" title="Other posts from the {{ tag | capitalize }} category">{{ tag | capitalize }}</a>{% unless forloop.last %}&nbsp;{% endunless %}{% endfor %}
+                {% for tag in post.tags %}<a href="{{ site.url }}/tags/index.html#{{ tag | cgi_encode }}" title="Other posts from the {{ tag | capitalize }} category">{{ tag | capitalize }}</a>{% unless forloop.last %}&nbsp;{% endunless %}{% endfor %}
                     
                 </div>-->
             
@@ -99,7 +99,7 @@ tags: [Mohit, Srivastava, Seattle, Microsoft, cloud, product management]
         <div class="small-12 medium-9 large-10 columns">
             <header class="notepad-post-header">
                 <h3 class="notepad-post-title">
-                    <a href="{{ site.baseurl }}{{ post.url }}">
+                    <a href="{{ site.url }}{{ post.url }}">
                         {{ post.title }}
                     </a>
                 </h3>
@@ -109,7 +109,7 @@ tags: [Mohit, Srivastava, Seattle, Microsoft, cloud, product management]
             </section>
             
                 <div class="notepad-index-post-tags">
-                {% for tag in post.categories %}<a href="{{ site.baseurl }}/categories/index.html#{{ post.categories | cgi_encode }}" title="Other posts from the {{ tag | capitalize }} category">{{ tag | capitalize }}</a>{% unless forloop.last %}&nbsp;{% endunless %}{% endfor %}
+                {% for tag in post.categories %}<a href="{{ site.url }}/categories/index.html#{{ post.categories | cgi_encode }}" title="Other posts from the {{ tag | capitalize }} category">{{ tag | capitalize }}</a>{% unless forloop.last %}&nbsp;{% endunless %}{% endfor %}
                     
                 </div>
             

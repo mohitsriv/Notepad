@@ -47,7 +47,7 @@ Description: Awesome dude, awesome life
                         <div class="notepad-post-menu-header-simple">
                             {% endif %}
                             <a class="notepad-blog-logo" href="/">
-                                <img src="{{ site.baseurl }}/images/{{ site.logo }}" alt="Blog Logo" />
+                                <img src="{{ site.url }}/images/{{ site.logo }}" alt="Blog Logo" />
                             </a>
 
                             <div class="notepad-blog-menu">
@@ -61,9 +61,9 @@ Description: Awesome dude, awesome life
                                     {% for link in site.links %}
                                     <li>{% if link.external %}
                                         <a href="{{ link.url }}">{{ link.title }}</a> {% else %}
-                                        <a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a> {% endif %} </li>
+                                        <a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a> {% endif %} </li>
                                     {% endfor %}
-                                    <li><a href="{{ site.baseurl }}/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li>
+                                    <li><a href="{{ site.url }}/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li>
                                 </ul>
 
                             </div>
@@ -72,22 +72,22 @@ Description: Awesome dude, awesome life
                         <div class="notepad-post-title bg-check">
                             <h1>{{ page.title }}</h1>
                             <p>by <strong>{{ site.owner.name }}</strong> &#8212; {% assign tagsize = page.tags.size %}{% if
-                                tagsize != 0 %}on {% for tag in page.tags %}<a href="{{ site.baseurl }}/tags/index.html#{{ tag | cgi_encode }}"
+                                tagsize != 0 %}on {% for tag in page.tags %}<a href="{{ site.url }}/tags/index.html#{{ tag | cgi_encode }}"
                                 data-toggle="tooltip" title="Posts tagged with {{ tag }}" rel="tag">{{ tag }}</a>{% unless
                                 forloop.last %}&nbsp;&comma;&nbsp;{% endunless %}{% endfor %}{% endif %} <strong><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %b %Y" }}</time></strong></p>
                         </div>
                         <div class="bg-img"></div>
                     </header>
                     <button class="trigger bg-check" data-info="Read more"><span>Trigger</span></button>
-                    <img src="{{ site.baseurl }}/images/{{ page.imagefeature }}" alt="cover-image" /> {% else %}
+                    <img src="{{ site.url }}/images/{{ page.imagefeature }}" alt="cover-image" /> {% else %}
                     <div class="notepad-post-title-simple row">
                         <div class="small-12 columns">
                             <div class="notepad-post-meta-simple">
                                 <h1>{{ page.title }}</h1>
                                 <p>by <strong>{{ site.owner.name }}</strong> &#8212; {% assign tagsize = page.tags.size %}{%
-                                    if tagsize != 0 %}on {% for tag in page.tags %}<a href="{{ site.baseurl }}/tags/index.html#{{ tag | cgi_encode }}"
+                                    if tagsize != 0 %}on {% for tag in page.tags %}<a href="{{ site.url }}/tags/index.html#{{ tag | cgi_encode }}"
                                     data-toggle="tooltip" title="Posts tagged with {{ tag }}" rel="tag">{{ tag }}</a>{% unless
-                                    forloop.last %}&comma;&nbsp;{% endunless %}{% endfor %}{% endif %} <br/><strong><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %b %Y" }}</time></strong> &vert; <a href="{{ site.baseurl }}{{ page.url }}#disqus_thread">Comments</a></p>
+                                    forloop.last %}&comma;&nbsp;{% endunless %}{% endfor %}{% endif %} <br/><strong><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %b %Y" }}</time></strong> &vert; <a href="{{ site.url }}{{ page.url }}#disqus_thread">Comments</a></p>
                             </div>
                         </div>
                     </div>

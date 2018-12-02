@@ -7,7 +7,7 @@ imagefeature: fourseasons.jpg
 chart: true
 ---
 <figure>
-  <img src="{{ site.baseurl }}/images/mohitsriv.jpg" alt="Mohit Srivastava">
+  <img src="{{ site.url }}/images/mohitsriv.jpg" alt="Mohit Srivastava">
   <figcaption>Mohit Srivastava</figcaption>
 </figure>
 
@@ -41,7 +41,7 @@ along the way, including being named one of TechCrunch's ["Web 2.0 Companies I
 Couldn't Live Without"](http://techcrunch.com/2007/01/02/2007-web-20-companies-i-couldnt-live-without/).
 
 This blog is generated using Jekyll and hosted on Netlify. Just
-because it is possible with Jekyll here are some stats. There are {{ site.posts | size }} posts in {{ site.tags | size }} categories which combined have {{ total_words }} words, which will take an average reader approximately <span class="time">{{ total_readtime }}</span> minutes to read. {% if featuredcount != 0 %}There are <a href="{{ site.baseurl }}/featured">{{ featuredcount }} featured posts</a>, you should definitely check those out.{% endif %} The most recent post is {% for post in site.posts limit:1 %}{% if post.description %}<a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.description }}">"{{ post.title }}"</a>{% else %}<a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.description }}" title="Read more about {{ post.title }}">"{{ post.title }}"</a>{% endif %}{% endfor %} which was published on {% for post in site.posts limit:1 %}{% assign modifiedtime = post.modified | date: "%Y%m%d" %}{% assign posttime = post.date | date: "%Y%m%d" %}<time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%d %b %Y" }}</time>{% if post.modified %}{% if modifiedtime != posttime %} and last modified on <time datetime="{{ post.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ post.modified | date: "%d %b %Y" }}</time>{% endif %}{% endif %}{% endfor %}. The last commit was on {{ site.time | date: "%A, %d %b %Y" }} at {{ site.time | date: "%I:%M %p" }} [UTC](http://en.wikipedia.org/wiki/Coordinated_Universal_Time "Temps Universel Coordonné").
+because it is possible with Jekyll here are some stats. There are {{ site.posts | size }} posts in {{ site.tags | size }} categories which combined have {{ total_words }} words, which will take an average reader approximately <span class="time">{{ total_readtime }}</span> minutes to read. {% if featuredcount != 0 %}There are <a href="{{ site.url }}/featured">{{ featuredcount }} featured posts</a>, you should definitely check those out.{% endif %} The most recent post is {% for post in site.posts limit:1 %}{% if post.description %}<a href="{{ site.url }}{{ post.url }}" title="{{ post.description }}">"{{ post.title }}"</a>{% else %}<a href="{{ site.url }}{{ post.url }}" title="{{ post.description }}" title="Read more about {{ post.title }}">"{{ post.title }}"</a>{% endif %}{% endfor %} which was published on {% for post in site.posts limit:1 %}{% assign modifiedtime = post.modified | date: "%Y%m%d" %}{% assign posttime = post.date | date: "%Y%m%d" %}<time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%d %b %Y" }}</time>{% if post.modified %}{% if modifiedtime != posttime %} and last modified on <time datetime="{{ post.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ post.modified | date: "%d %b %Y" }}</time>{% endif %}{% endif %}{% endfor %}. The last commit was on {{ site.time | date: "%A, %d %b %Y" }} at {{ site.time | date: "%I:%M %p" }} [UTC](http://en.wikipedia.org/wiki/Coordinated_Universal_Time "Temps Universel Coordonné").
 
 <!--
 I am an PhD candidate in *ESE* at the [SEAS](http://www.seas.upenn.edu/) at **UPENN**. I am licensed as a Professional Engineer (P.E) to practice in the states of Texas, Massachusetts and California. I double majored in EECS and Mathematics during my undergraduate life at [MIT](http://www.mit.edu/), and currently focusing on Electrical Engineering for my post-graduate studies.
@@ -53,25 +53,25 @@ I am an PhD candidate in *ESE* at the [SEAS](http://www.seas.upenn.edu/) at **UP
 *[UPENN]: University of Pennsylvania
 
 <figure>
-	<img src="{{ site.baseurl }}/images/Hossain-Mohd-Faysal.jpg" alt="Hossain Mohammad Faysal">
+	<img src="{{ site.url }}/images/Hossain-Mohd-Faysal.jpg" alt="Hossain Mohammad Faysal">
 	<figcaption>At Bates Linear Accelerator Center</figcaption>
 </figure>
 
 I was born and brought up in Doha. Yes, its a desert peninsula, yes we have camels and falcons and all the other Middle Eastern traits/stereotypes you can think of.
 
 <figure class="third">
-	<a href="{{ site.baseurl }}/images/about/1.jpg"><img src="{{ site.baseurl }}/images/about/1-001.jpg"></a>
-	<a href="{{ site.baseurl }}/images/about/2.jpg"><img src="{{ site.baseurl }}/images/about/2-001.jpg"></a>
-	<a href="{{ site.baseurl }}/images/about/3.jpg"><img src="{{ site.baseurl }}/images/about/3-001.jpg"></a>
+	<a href="{{ site.url }}/images/about/1.jpg"><img src="{{ site.url }}/images/about/1-001.jpg"></a>
+	<a href="{{ site.url }}/images/about/2.jpg"><img src="{{ site.url }}/images/about/2-001.jpg"></a>
+	<a href="{{ site.url }}/images/about/3.jpg"><img src="{{ site.url }}/images/about/3-001.jpg"></a>
 </figure>
 <figure class="half">
-	<a href="{{ site.baseurl }}/images/about/4.jpg"><img src="{{ site.baseurl }}/images/about/4-001.jpg"></a>
-	<a href="{{ site.baseurl }}/images/about/5.jpg"><img src="{{ site.baseurl }}/images/about/5-001.jpg"></a>
+	<a href="{{ site.url }}/images/about/4.jpg"><img src="{{ site.url }}/images/about/4-001.jpg"></a>
+	<a href="{{ site.url }}/images/about/5.jpg"><img src="{{ site.url }}/images/about/5-001.jpg"></a>
 </figure>
 <figure class="third">
-	<a href="{{ site.baseurl }}/images/about/6.jpg"><img src="{{ site.baseurl }}/images/about/6-001.jpg"></a>
-	<a href="{{ site.baseurl }}/images/about/7.jpg"><img src="{{ site.baseurl }}/images/about/7-001.jpg"></a>
-	<a href="{{ site.baseurl }}/images/about/8.jpg"><img src="{{ site.baseurl }}/images/about/8-001.jpg"></a>
+	<a href="{{ site.url }}/images/about/6.jpg"><img src="{{ site.url }}/images/about/6-001.jpg"></a>
+	<a href="{{ site.url }}/images/about/7.jpg"><img src="{{ site.url }}/images/about/7-001.jpg"></a>
+	<a href="{{ site.url }}/images/about/8.jpg"><img src="{{ site.url }}/images/about/8-001.jpg"></a>
 	<figcaption>Doha at its full glory.</figcaption>
 </figure>
 
