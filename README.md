@@ -1,4 +1,4 @@
-Notepad is a Jekyll theme which is very simple, clean and beautiful. This theme is good for any blog.
+aaNotepad is a Jekyll theme which is very simple, clean and beautiful. This theme is good for any blog.
   
 Main Features:
 
