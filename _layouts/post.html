@@ -71,8 +71,8 @@ Description: Awesome dude, awesome life
                         {% if page.imagefeature %}
                         <div class="notepad-post-title bg-check">
                             <h1>{{ page.title }}</h1>
-                            <p>by <strong>{{ site.owner.name }}</strong> &#8212; {% assign tagsize = page.tags.size %}{% if
-                                tagsize != 0 %}on {% for tag in page.tags %}<a href="{{ site.url }}/tags/index.html#{{ tag | cgi_encode }}"
+                            <p>by <strong>{{ site.owner.name }}</strong>{% assign tagsize = page.tags.size %}{% if
+                                tagsize != 0 %} &#8212; on {% for tag in page.tags %}<a href="{{ site.url }}/tags/index.html#{{ tag | cgi_encode }}"
                                 data-toggle="tooltip" title="Posts tagged with {{ tag }}" rel="tag">{{ tag }}</a>{% unless
                                 forloop.last %}&nbsp;&comma;&nbsp;{% endunless %}{% endfor %}{% endif %} <strong><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %b %Y" }}</time></strong></p>
                         </div>
@@ -84,8 +84,8 @@ Description: Awesome dude, awesome life
                         <div class="small-12 columns">
                             <div class="notepad-post-meta-simple">
                                 <h1>{{ page.title }}</h1>
-                                <p>by <strong>{{ site.owner.name }}</strong> &#8212; {% assign tagsize = page.tags.size %}{%
-                                    if tagsize != 0 %}on {% for tag in page.tags %}<a href="{{ site.url }}/tags/index.html#{{ tag | cgi_encode }}"
+                                <p>by <strong>{{ site.owner.name }}</strong>{% assign tagsize = page.tags.size %}{%
+                                    if tagsize != 0 %} &#8212; on {% for tag in page.tags %}<a href="{{ site.url }}/tags/index.html#{{ tag | cgi_encode }}"
                                     data-toggle="tooltip" title="Posts tagged with {{ tag }}" rel="tag">{{ tag }}</a>{% unless
                                     forloop.last %}&comma;&nbsp;{% endunless %}{% endfor %}{% endif %} <br/><strong><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %b %Y" }}</time></strong> &vert; <a href="{{ site.url }}{{ page.url }}#disqus_thread">Comments</a></p>
                             </div>
